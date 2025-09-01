@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상생페이백 대시보드</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="font/font_pretendard.css">
+</head>
+
+
+
+<body>
+<header class="site-header dashboard-container">
+    <div class="header-left d-flex align-center gap-2">
+        <img src="images/semas_logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="header-center d-flex align-center">
+        <div class="header-center-logo">
+            <h1 class="main-title">상생페이백</h1>
+                <div class="hamburger-menu pos-absolute" id="menuBtn" >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                  
+                  <div id="menuPanel" class="menuPanel" hidden>
+                    <ul>
+                      <li role="menuitem"><a href="#">설정1</a></li>
+                      <li role="menuitem"><a href="#">설정2</a></li>
+                      <li role="menuitem"><a href="#">설정3</a></li>
+                      <li role="menuitem"><a href="#">설정4</a></li>
+                    </ul>
+                  </div>
+                </div>
+        </div>
+    </div>
+    
+    <div class="header-right d-flex align-center gap-3">
+        <p class="timestamp">2025년 9월 1일 09시 00분</p>
+    </div>
+</header>
+<main class="dashboard-container">
+    <div class="dashboard-grid">
+        <!-- Left Column -->
+        <aside class="grid-column column-left">
+            <section class="card support-status-card">
+                <div class="card-header">
+                    <h2 class="card-title">지원현황</h2>
+                </div>
+                <div class="budget-info d-flex justify-between align-center">
+                    <div class="d-flex align-center gap-3">
+                        <div>
+                            <p class="budget-label">예산액</p>
+                            <p class="budget-label sm">(상생페이백)</p>
+                        </div>
+                        <div>
+                            
+                            <p class="budget-amount">1조 3700억</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-body">
+                            <div class="stat-row dot"><span>지급</span><div><span class="value">1조</span><span class="unit">억원</span></div></div>
+                            <div class="stat-row dot"><span>잔액</span><div><span class="value">3700</span><span class="unit">억원</span></div></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="stat-body chart">
+                            <div>그래프 넣어주세요</div> 
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </section>
+            
+            <section class="card">
+                <div class="card-header">
+                    <h2 class="card-title">신청현황</h2>
+                    <div class="header_cont">
+                        <div class="stat-row"><span>당일</span><div><span class="value">1,200</span><span class="unit">만건</span></div></div>
+                        <div class="stat-row"><span>누적</span><div><span class="value">1,200</span><span class="unit">만건</span></div></div>
+                    </div>
+                </div>
+                <div class="pos-relative card-time-chart" style="height: 180px;">
+                    그래프 넣어주세요
+                </div>
+            </section>
+            <section class="card">
+                <div class="card-category-header">
+                    
+                    <div class="category-tabs">
+                        <button class="tab-btn active">지역</button>
+                        <button class="tab-btn">시간</button>
+                        <button class="tab-btn">연령</button>
+                    </div>
+                </div>
+                <div class="pos-relative card-age-chart" style="height: 320px;">
+                  <ul class="ranking-list">
+                    <li class="ranking-item"><span>서울시</span><div class="bar-chart"><div class="bar" style="width: 100%;"><em class="value_per">90%</em></div></div><span class="value">602,950 <i>억원</i></span></li>
+                    <li class="ranking-item"><span>부산시</span><div class="bar-chart"><div class="bar" style="width: 27.5%;"><em class="value_per">90%</em></div></div><span class="value">165,953 <i>건</i></span></li>
+                    <li class="ranking-item"><span>대구시</span><div class="bar-chart"><div class="bar" style="width: 53.5%;"><em class="value_per">90%</em></div></div><span class="value">81,132 <i>건</i></span></li>
+                    <li class="ranking-item"><span>인천시</span><div class="bar-chart"><div class="bar" style="width: 42.7%;"><em class="value_per">90%</em></div></div><span class="value">76,906 <i>건</i></span></li>
+                    <li class="ranking-item"><span>14시~16시</span><div class="bar-chart"><div class="bar" style="width: 10%;"><em class="value_per">90%</em></div></div><span class="value">60,132 <i>건</i></span></li>
+                    <li class="ranking-item active"><span>충청남도</span><div class="bar-chart"><div class="bar" style="width: 100%;"><em class="value_per">90%</em></div></div><span class="value">602,950 <i>건</i></span></li>
+                    <li class="ranking-item"><span>울산시</span><div class="bar-chart"><div class="bar" style="width: 67.5%;"><em class="value_per">90%</em></div></div><span class="value">165,953 <i>건</i></span></li>
+                    <li class="ranking-item"><span>강원도</span><div class="bar-chart"><div class="bar" style="width: 73.5%;"><em class="value_per">90%</em></div></div><span class="value">81,132 <i>건</i></span></li>
+                    <li class="ranking-item"><span>20대이하</span><div class="bar-chart"><div class="bar" style="width: 82.7%;"><em class="value_per">90%</em></div></div><span class="value">76,906 <i>건</i></span></li>
+                    <li class="ranking-item"><span>제주도</span><div class="bar-chart"><div class="bar" style="width: 10%;"><em class="value_per">90%</em></div></div><span class="value">60,132 <i>건</i></span></li>
+                    
+                </ul>
+                </div>
+                <div class="viewer"><p>신청률이 가장 높은 시간대는 <span>14~16시 (20%)</span></p></div>
+            </section>
+        </aside>
+
+        <!-- Center Column -->
+        <section class="grid-column column-center">
+            <div class="pos-relative center-map-wrap">
+
+                <div class="center-map-container" style="height: 920px;">   
+                <div class="dashboard-center">
+                    <div class="d-flex justify-between align-center mb-2 center-map-header">
+                      <div class="dropdown-container">
+                       
+
+                        
+                        <div class="select_box">
+                        <select class="select_type01">
+                            <option value="">TOP5</option>
+                        </select>
+                        </div>
+                        
+                      </div>
+                      <div class="map-header-tabs">
+                        <button class="tab-btn active">지원</button>
+                        <button class="tab-btn">상생</button>
+                      </div>
+                      
+
+                      <div class="select_box">
+                        <select class="select_type01" id="mySelect">
+                            <option value="total">전국</option>
+                            <option value="seoul">서울특별시</option>
+                            <option value="busan">부산광역시</option>
+                            <option value="daegu">대구광역시</option>
+                            <option value="incheon">인천광역시</option>
+                            <option value="gwangju">광주광역시</option>
+                            <option value="daejeon">대전광역시</option>
+                            <option value="ulsan">울산광역시</option>
+                            <option value="sejong">세종특별자치시</option>
+                            <option value="gyeonggi">경기도</option>
+                            <option value="chungbuk">충청북도</option>
+                            <option value="chungnam">충청남도</option>
+                            <option value="jeonnam">전라남도</option>
+                            <option value="gyeongsangbuk">경상북도</option>
+                            <option value="gyeongsangnam">경상남도</option>
+                            <option value="gangwon">강원특별자치도</option>
+                            <option value="jeonbuk">전북특별자치도</option>
+                            <option value="jeju">제주특별자치도</option>
+                        </select>
+                        
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="map_comment tab1">
+                        <div><p>가장 높은 신청 지역은 <p class="point"><span><strong>서울 43%</strong> <i>(</i><strong>1,200</strong><i>만건)</i></span></p></p></div>
+                        <div><p>가장 높은 지급 금액은 <p class="point"><span><strong>부산 73%</strong> <i>(</i><strong>3,200</strong><i>만건)</i></span></p></p></div>
+                    </div>
+
+
+
+                <article class="map-section type-support">
+                  <div class="map show total" id="total" data-map="total" >
+                    <div class="label active" data-name="서울"><strong>서울</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="강원"><strong>강원</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="경기도"><strong>경기도</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label active" data-name="인천"><strong>인천</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="충북"><strong>충북</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="경북"><strong>경북</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="세종"><strong>세종</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="충남"><strong>충남</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label active" data-name="대구"><strong>대구</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="울산"><strong>울산</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="대전"><strong>대전</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="전북"><strong>전북</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="경남"><strong>경남</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="광주"><strong>광주</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label active" data-name="부산"><strong>부산</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="제주"><strong>제주</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="전남"><strong>전남</strong><span class="count">2.1<i>만건</i></span></div>
+                  </div>
+
+                  <div class="map seoul" id="seoul" data-map="seoul" >
+                    <div class="label active" data-name="강남구"><strong>강남구</strong><span class="count">2.1<i>만건</i></span></div>
+                    <div class="label" data-name="강동구"><strong>강동구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="강북구"><strong>강북구</strong><span class="count">9<i>천건</i></span></div>
+                    <div class="label" data-name="강서구"><strong>강서구</strong><span class="count">1.3<i>만건</i></span></div>
+                    <div class="label" data-name="관악구"><strong>관악구</strong><span class="count">1.6<i>만건</i></span></div>
+                    <div class="label" data-name="광진구"><strong>광진구</strong><span class="count">8<i>천건</i></span></div>
+                    <div class="label" data-name="구로구"><strong>구로구</strong><span class="count">1.1<i>만건</i></span></div>
+                    <div class="label" data-name="금천구"><strong>금천구</strong><span class="count">7<i>천건</i></span></div>
+                    <div class="label" data-name="노원구"><strong>노원구</strong><span class="count">1.4<i>만건</i></span></div>
+                    <div class="label active" data-name="도봉구"><strong>도봉구</strong><span class="count">6<i>천건</i></span></div>
+                    <div class="label" data-name="동대문구"><strong>동대문구</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="동작구"><strong>동작구</strong><span class="count">1.1<i>만건</i></span></div>
+                    <div class="label" data-name="마포구"><strong>마포구</strong><span class="count">9<i>천건</i></span></div>
+                    <div class="label" data-name="서대문구"><strong>서대문구</strong><span class="count">8<i>천건</i></span></div>
+                    <div class="label" data-name="서초구"><strong>서초구</strong><span class="count">1.9<i>만건</i></span></div>
+                    <div class="label" data-name="성동구"><strong>성동구</strong><span class="count">1<i>만건</i></span></div>
+                    <div class="label" data-name="성북구"><strong>성북구</strong><span class="count">1.3<i>만건</i></span></div>
+                    <div class="label" data-name="송파구"><strong>송파구</strong><span class="count">2.0<i>만건</i></span></div>
+                    <div class="label" data-name="양천구"><strong>양천구</strong><span class="count">1.4<i>만건</i></span></div>
+                    <div class="label active" data-name="영등포구"><strong>영등포구</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="용산구"><strong>용산구</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="은평구"><strong>은평구</strong><span class="count">8<i>천건</i></span></div>
+                    <div class="label" data-name="종로구"><strong>종로구</strong><span class="count">1.5<i>만건</i></span></div>
+                    <div class="label" data-name="중구"><strong>중구</strong><span class="count">1.1<i>만건</i></span></div>
+                    <div class="label" data-name="중랑구"><strong>중랑구</strong><span class="count">9<i>천건</i></span></div>
+                  </div>
+
+                
+
+                  <div class="map busan" id="busan" data-map="busan">
+                    <div class="label" data-name="기장군"><strong>기장군</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="금정구"><strong>금정구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="해운대구"><strong>해운대구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="북구"><strong>북구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="동래구"><strong>동래구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="연제구"><strong>연제구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="수영구"><strong>수영구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="부산진구"><strong>부산진구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="사상구"><strong>사상구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="동구"><strong>동구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="서구"><strong>서구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="중구"><strong>중구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="영도구"><strong>영도구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="사하구"><strong>사하구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="남구"><strong>남구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="강서구"><strong>강서구</strong><span class="count">1.8<i>만건</i></span></div>
+                </div>
+
+
+
+                <div class="map daegu" id="daegu" data-map="daegu">
+                    <div class="label" data-name="북구"><strong>북구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="동구"><strong>동구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="서구"><strong>서구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="중구"><strong>중구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="남구"><strong>남구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="수성구"><strong>수성구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="달서구"><strong>달서구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="달성군"><strong>달성군</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="군위군"><strong>군위군</strong><span class="count">1.8<i>만건</i></span></div>
+                </div>
+
+
+                <div class="map incheon" id="incheon" data-map="incheon">
+                    <div class="label" data-name="동구"><strong>동구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="서구"><strong>서구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="중구"><strong>중구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="계양구"><strong>계양구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="부평구"><strong>부평구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="남동구"><strong>남동구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="미추홀구"><strong>미추홀구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="연수구"><strong>연수구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="강화군"><strong>강화군</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="웅진군"><strong>웅진군</strong><span class="count">1.8<i>만건</i></span></div>
+                </div>
+
+
+                <div class="map gwangju" id="gwangju" data-map="gwangju">
+                    <div class="label" data-name="북구"><strong>북구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="동구"><strong>동구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="서구"><strong>서구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="광산구"><strong>광산구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="남구"><strong>남구</strong><span class="count">1.8<i>만건</i></span></div>
+                </div>
+
+
+
+                <div class="map daejeon" id="daejeon" data-map="daejeon">
+                    <div class="label" data-name="동구"><strong>동구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="서구"><strong>서구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="중구"><strong>중구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="대덕구"><strong>대덕구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="유성구"><strong>유성구</strong><span class="count">1.8<i>만건</i></span></div>
+                </div>
+
+
+
+                <div class="map ulsan" id="ulsan" data-map="ulsan" >
+                    <div class="label" data-name="북구"><strong>북구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="동구"><strong>동구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="중구"><strong>중구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="남구"><strong>남구</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="울주군"><strong>울주군</strong><span class="count">1.8<i>만건</i></span></div>
+                </div>
+
+
+
+                <div class="map sejong" id="sejong" data-map="sejong">
+                    <div class="label" data-name="세종시"><strong>세종시</strong><span class="count">1.8<i>만건</i></span></div>
+                </div>
+
+             
+
+
+                  <div class="map gyeonggi" id="gyeonggi" data-map="gyeonggi">
+                    <div class="label" data-name="수원시"><strong>수원시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="의왕시"><strong>의왕시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="오산시"><strong>오산시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="안성시"><strong>안성시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="평택시"><strong>평택시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="화성시"><strong>화성시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="군포시"><strong>군포시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="안산시"><strong>안산시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="이천시"><strong>이천시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="용인시"><strong>용인시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="안양시"><strong>안양시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="시흥시"><strong>시흥시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="성남시"><strong>성남시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="광주시"><strong>광주시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="여주시"><strong>여주시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="부천시"><strong>부천시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="광명시"><strong>광명시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="과천시"><strong>과천시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="구리시"><strong>구리시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="하남시"><strong>하남시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="양평군"><strong>양평군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="연천군"><strong>연천군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="포천시"><strong>포천시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="가평군"><strong>가평군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="남양주시"><strong>남양주시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="양주시"><strong>양주시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="동두천시"><strong>동두천시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="의정부시"><strong>의정부시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="김포시"><strong>김포시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="파주시"><strong>파주시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="고양시"><strong>고양시</strong><span class="count">1.2<i>만건</i></span></div>
+                    
+                    
+                  </div>
+
+
+
+                  <div class="map chungbuk" id="chungbuk" data-map="chungbuk">
+                    <div class="label" data-name="영동군"><strong>영동군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="옥천군"><strong>옥천군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="보은군"><strong>보은군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="청주시"><strong>청주시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="괴산군"><strong>괴산군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="진천군"><strong>진천군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="음성군"><strong>음성군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="충주시"><strong>충주시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="제천시"><strong>제천시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="단양군"><strong>단양군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="증평군"><strong>증평군</strong><span class="count">1.2<i>만건</i></span></div>
+                </div>
+
+
+                <div class="map chungnam" id="chungnam" data-map="chungnam">
+                    <div class="label" data-name="당진시"><strong>당진시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="아산시"><strong>아산시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="천안시"><strong>천안시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="예산군"><strong>예산군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="서산시"><strong>서산시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="태안군"><strong>태안군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="홍성군"><strong>홍성군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="청양군"><strong>청양군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="공주시"><strong>공주시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="보령시"><strong>보령시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="서천군"><strong>서천군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="부여군"><strong>부여군</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="논산시"><strong>논산시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="계룡시"><strong>계룡시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="금산군"><strong>금산군</strong><span class="count">1.2<i>만건</i></span></div>
+                </div>
+
+               
+                <div class="map jeonnam" id="jeonnam" data-map="jeonnam">
+                    <div class="label" data-name="영광군"><strong>영광군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="함평군"><strong>함평군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="장성군"><strong>장성군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="담양군"><strong>담양군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="곡성군"><strong>곡성군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="구례군"><strong>구례군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="신안군"><strong>신안군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="무안군"><strong>무안군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="나주시"><strong>나주시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="화순군"><strong>화순군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="순천시"><strong>순천시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="광양시"><strong>광양시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="영암군"><strong>영암군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="보성군"><strong>보성군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="여수시"><strong>여수시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="고흥군"><strong>고흥군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="장흥군"><strong>장흥군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="강진군"><strong>강진군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="해남군"><strong>해남군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="목포시"><strong>목포시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="진도군"><strong>진도군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="완도군"><strong>완도군</strong><span class="count">1.0<i>만건</i></span></div>
+                </div>
+
+                
+                <div class="map gyeongsangbuk" id="gyeongsangbuk" data-map="gyeongsangbuk">
+                    <div class="label" data-name="울릉군"><strong>울릉군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="울진군"><strong>울진군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="봉화군"><strong>봉화군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="영양군"><strong>영양군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="영주시"><strong>영주시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="안동시"><strong>안동시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="예천군"><strong>예천군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="문경시"><strong>문경시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="상주시"><strong>상주시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="영덕군"><strong>영덕군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="청송군"><strong>청송군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="의성군"><strong>의성군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="구미시"><strong>구미시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="김천시"><strong>김천시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="칠곡군"><strong>칠곡군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="성주군"><strong>성주군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="고령군"><strong>고령군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="영천시"><strong>영천시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="포항시"><strong>포항시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="경주시"><strong>경주시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="경산시"><strong>경산시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="청도군"><strong>청도군</strong><span class="count">1.0<i>만건</i></span></div>
+                </div>
+
+
+                  <div class="map gyeongsangnam" id="gyeongsangnam" data-map="gyeongsangnam">
+                    <div class="label active" data-name="창원시"><strong>창원시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="김해시"><strong>김해시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="진주시"><strong>진주시</strong><span class="count">8<i>천건</i></span></div>
+                    <div class="label" data-name="양산시"><strong>양산시</strong><span class="count">5<i>천건</i></span></div>
+                    <div class="label" data-name="거제시"><strong>거제시</strong><span class="count">3<i>천건</i></span></div>
+                    <div class="label" data-name="통영시"><strong>통영시</strong><span class="count">7<i>천건</i></span></div>
+                    <div class="label" data-name="사천시"><strong>사천시</strong><span class="count">4<i>천건</i></span></div>
+                    <div class="label" data-name="밀양시"><strong>밀양시</strong><span class="count">6<i>천건</i></span></div>
+                    <div class="label" data-name="함안군"><strong>함안군</strong><span class="count">3<i>천건</i></span></div>
+                    <div class="label" data-name="창녕군"><strong>창녕군</strong><span class="count">3<i>천건</i></span></div>
+                    <div class="label" data-name="고성군"><strong>고성군</strong><span class="count">4<i>천건</i></span></div>
+                    <div class="label" data-name="남해군"><strong>남해군</strong><span class="count">2<i>천건</i></span></div>
+                    <div class="label" data-name="하동군"><strong>하동군</strong><span class="count">5<i>천건</i></span></div>
+                    <div class="label" data-name="산청군"><strong>산청군</strong><span class="count">3<i>천건</i></span></div>
+                    <div class="label" data-name="함양군"><strong>함양군</strong><span class="count">2<i>천건</i></span></div>
+                    <div class="label" data-name="거창군"><strong>거창군</strong><span class="count">4<i>천건</i></span></div>
+                    <div class="label" data-name="합천군"><strong>합천군</strong><span class="count">2<i>천건</i></span></div>
+                  </div>
+
+
+
+                  <div class="map gangwon" id="gangwon" data-map="gangwon">
+                    <div class="label active" data-name="춘천시"><strong>춘천시</strong><span class="count">1.2<i>만건</i></span></div>
+                    <div class="label" data-name="원주시"><strong>원주시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="강릉시"><strong>강릉시</strong><span class="count">8<i>천건</i></span></div>
+                    <div class="label" data-name="동해시"><strong>동해시</strong><span class="count">5<i>천건</i></span></div>
+                    <div class="label" data-name="태백시"><strong>태백시</strong><span class="count">3<i>천건</i></span></div>
+                    <div class="label" data-name="속초시"><strong>속초시</strong><span class="count">7<i>천건</i></span></div>
+                    <div class="label" data-name="삼척시"><strong>삼척시</strong><span class="count">4<i>천건</i></span></div>
+                    <div class="label" data-name="홍천군"><strong>홍천군</strong><span class="count">6<i>천건</i></span></div>
+                    <div class="label" data-name="횡성군"><strong>횡성군</strong><span class="count">3<i>천건</i></span></div>
+                    <div class="label" data-name="영월군"><strong>영월군</strong><span class="count">3<i>천건</i></span></div>
+                    <div class="label" data-name="평창군"><strong>평창군</strong><span class="count">4<i>천건</i></span></div>
+                    <div class="label" data-name="정선군"><strong>정선군</strong><span class="count">2<i>천건</i></span></div>
+                    <div class="label" data-name="철원군"><strong>철원군</strong><span class="count">5<i>천건</i></span></div>
+                    <div class="label" data-name="화천군"><strong>화천군</strong><span class="count">3<i>천건</i></span></div>
+                    <div class="label" data-name="양구군"><strong>양구군</strong><span class="count">2<i>천건</i></span></div>
+                    <div class="label" data-name="인제군"><strong>인제군</strong><span class="count">4<i>천건</i></span></div>
+                    <div class="label" data-name="고성군"><strong>고성군</strong><span class="count">2<i>천건</i></span></div>
+                    <div class="label" data-name="양양군"><strong>양양군</strong><span class="count">3<i>천건</i></span></div>
+                  </div>
+
+                 
+
+                  <div class="map jeonbuk" id="jeonbuk" data-map="jeonbuk">
+                    <div class="label" data-name="군산시"><strong>군산시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="익산시"><strong>익산시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="완주군"><strong>완주군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="무주군"><strong>무주군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="진안군"><strong>진안군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="전주시"><strong>전주시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="김제시"><strong>김제시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="부안군"><strong>부안군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="정읍시"><strong>정읍시</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="임실군"><strong>임실군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="장수군"><strong>장수군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="고창군"><strong>고창군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="순창군"><strong>순창군</strong><span class="count">1.0<i>만건</i></span></div>
+                    <div class="label" data-name="남원시"><strong>남원시</strong><span class="count">1.0<i>만건</i></span></div>
+                </div>
+
+
+                <div class="map jeju" id="jeju" data-map="jeju" >
+                    <div class="label" data-name="제주시"><strong>제주시</strong><span class="count">1.8<i>만건</i></span></div>
+                    <div class="label" data-name="서귀포시"><strong>서귀포시</strong><span class="count">1.8<i>만건</i></span></div>
+                </div>
+
+
+
+                </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+                  <div class="ticker"><p><span class="ticker-date">2025.09.21</span> <span>12:30 </span><span>경기도 고양시</span><span>고성군</span><span>홍**님</span><span>신청완료</span></p></div>
+            </div>
+            
+        </div> 
+        
+
+
+           
+            
+            
+            <section class="card member-card" style="height: 180px;">
+                <div class="stat-title"><p class="member-title">2025.09.05 이후</p></div>
+                
+                <div class="stat-box mem">
+                    <div class="stat-header">
+                            <span>회원</span>
+                        </div>
+                        <div class="stat-body">
+                            <div class="stat-row"><span>당일</span><div><span class="value">3,109</span><span class="unit">명</span></div></div>
+                            <div class="stat-row"><span>누적</span><div><span class="value">251,960</span><span class="unit">명</span></div></div>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-header">
+                            <span>방문자</span>
+                        </div>
+                        <div class="stat-body">
+                            <div class="stat-row"><span>당일</span><div><span class="value">233,460</span><span class="unit">명</span></div></div>
+                            <div class="stat-row"><span>누적</span><div><span class="value">2,990</span><span class="unit">명</span></div></div>
+                    </div>
+                </div>
+                
+                
+            </section>
+        </section>
+
+        <!-- Right Column -->
+        <aside class="grid-column column-right">
+            <section class="card support-status-card">
+                <div class="card-header">
+                    <h2 class="card-title">소비현황</h2>
+                </div>
+                <div class="budget-info d-flex justify-between align-center">
+                    <div class="d-flex align-center gap-3">
+                        <div>
+                            <p class="budget-label">전국 가맹점매출</p>
+                            <p class="budget-label sm">(25년 온누리상품권 전체)</p>
+                        </div>
+                        <div>
+                            
+                            <p class="budget-amount">39,800<i>억원</i></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <p class="sm_title">지원이후</p>
+                        <div class="stat-body">
+                            <div class="stat-row dot"><span>일평균 매출액은</span><div><span class="value">12%</span><img src="images/ico_arrow_up.png"><span class="unit">증가</span></div></div>
+                            <div class="stat-row dot"><span>상생페이액은</span><div><span class="value">23,700억원</span><span class="unit">소비</span></div></div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+            </section>
+            
+
+            <section class="card">
+                <div class="card-header">
+                    <h2 class="card-title">소비현황<span class="card-title-sm">(상생페이백)</span></h2>
+                    <div class="header_cont">
+                        <div class="stat-row"><span>당일</span><div><span class="value">1,200</span><span class="unit">억원</span></div></div>
+                        <div class="stat-row"><span>누적</span><div><span class="value">1,200</span><span class="unit">억원</span></div></div>
+                    </div>
+                </div>
+                <div class="pos-relative card-time-chart" style="height: 180px;">
+                    그래프 넣어주세요
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <section class="card">
+                <div class="card-category-header">
+                    
+                    <div class="category-tabs">
+                        <button class="tab-btn active"><span>상품권전체</span>매출</button>
+                        <button class="tab-btn"><span>상생페이백</span>소비</button>
+                    </div>
+
+                    <div class="category-tabs-sm">
+                        <button class="tab-btn active">지역</button>
+                        <button class="tab-btn">업종</button>
+                        <button class="tab-btn">연령</button>
+                        <button class="tab-btn">시간</button>
+                        <button class="tab-btn">요일</button>
+                    </div>
+                </div>
+                <div class="pos-relative card-age-chart" style="height: 300px;">
+                  <ul class="ranking-list">
+                    <li class="ranking-item"><span>서울시</span><div class="bar-chart"><div class="bar" style="width: 100%;"><em class="value_per">90%</em></div></div><span class="value">602,950 <i>억원</i></span></li>
+                    <li class="ranking-item"><span>부산시</span><div class="bar-chart"><div class="bar" style="width: 27.5%;"><em class="value_per">90%</em></div></div><span class="value">165,953 <i>건</i></span></li>
+                    <li class="ranking-item"><span>대구시</span><div class="bar-chart"><div class="bar" style="width: 53.5%;"><em class="value_per">90%</em></div></div><span class="value">81,132 <i>건</i></span></li>
+                    <li class="ranking-item"><span>인천시</span><div class="bar-chart"><div class="bar" style="width: 42.7%;"><em class="value_per">90%</em></div></div><span class="value">76,906 <i>건</i></span></li>
+                    <li class="ranking-item"><span>14시~16시</span><div class="bar-chart"><div class="bar" style="width: 10%;"><em class="value_per">90%</em></div></div><span class="value">60,132 <i>건</i></span></li>
+                    <li class="ranking-item active"><span>충청남도</span><div class="bar-chart"><div class="bar" style="width: 100%;"><em class="value_per">90%</em></div></div><span class="value">602,950 <i>건</i></span></li>
+                    <li class="ranking-item"><span>울산시</span><div class="bar-chart"><div class="bar" style="width: 67.5%;"><em class="value_per">90%</em></div></div><span class="value">165,953 <i>건</i></span></li>
+                    <li class="ranking-item"><span>강원도</span><div class="bar-chart"><div class="bar" style="width: 73.5%;"><em class="value_per">90%</em></div></div><span class="value">81,132 <i>건</i></span></li>
+                    <li class="ranking-item"><span>20대이하</span><div class="bar-chart"><div class="bar" style="width: 82.7%;"><em class="value_per">90%</em></div></div><span class="value">76,906 <i>건</i></span></li>
+                   
+                    
+                </ul>
+                </div>
+            </section>
+            
+        </aside>
+    </div>
+</main>
+
+<script>
+  const positionsData = {
+  total: {
+    '서울': {left: 266, top: 46},
+    '강원': {left: 368, top: 30},
+    '경기도': {left: 255, top: 128},
+    '인천': {left: 171, top: 31},
+    '충북': {left: 346, top: 147},
+    '경북': {left: 448, top: 217},
+    '세종': {left: 231, top: 206},
+    '충남': {left: 136, top: 215},
+    '대구': {left: 367, top: 292},
+    '울산': {left: 457, top: 329},
+    '대전': {left: 251, top: 280},
+    '전북': {left: 167, top: 326},
+    '경남': {left: 329, top: 391},
+    '광주': {left: 223, top: 430},
+    '부산': {left: 440, top: 423},
+    '제주': {left: 216, top: 570},
+    '전남': {left: 117, top: 469}
+  },
+  seoul: {
+    '강남구': { left: 468, top: 490 },
+    '강동구': { left: 628, top: 338 },
+    '강북구': { left: 277, top: 133 },
+    '강서구': { left: 28, top: 284 },
+    '관악구': { left: 277, top: 521 },
+    '광진구': { left: 521, top: 293 },
+    '구로구': { left: 51, top: 468 },
+    '금천구': { left: 167, top: 507 },
+    '노원구': { left: 493, top: 81 },
+    '도봉구': { left: 395, top: 48 },
+    '동대문구': { left: 479, top: 185 },
+    '동작구': { left: 302, top: 417 },
+    '마포구': { left: 114, top: 212 },
+    '서대문구': { left: 226, top: 210 },
+    '서초구': { left: 405, top: 405 },
+    '성동구': { left: 428, top: 285 },
+    '성북구': { left:383, top: 153 },
+    '송파구': { left: 543, top: 404 },
+    '양천구': { left: 104, top: 365 },
+    '영등포구': { left: 204, top: 398 },
+    '용산구': { left: 215, top: 297 },
+    '은평구': { left: 183, top: 109 },
+    '종로구': { left: 343, top:233 },
+    '중구': { left: 318, top: 315 },
+    '중랑구': { left: 585, top: 133 }
+  },
+
+
+  busan: {
+    '기장군':  { left: 490, top: 130 },
+    '금정구':  { left: 387, top: 168 },
+    '해운대구':  { left: 484, top: 224 },
+    '북구':  { left: 286, top: 221 },
+    '동래구':  { left: 372, top: 248 },
+    '연제구':  { left: 422, top: 330 },
+    '수영구':  { left: 530, top: 320 },
+    '부산진구':  { left: 320, top: 321 },
+    '사상구':  { left: 218, top: 314 },
+    '동구':  { left: 315, top: 400 },
+    '서구':  { left: 225, top: 430 },
+    '중구':  { left: 315, top: 500 },
+    '영도구':  { left: 415, top: 510 },
+    '사하구':  { left: 215, top: 520 },
+    '남구':  { left: 405, top: 410 },
+    '강서구':  { left: 105, top: 350 }
+  },
+
+  daegu: {
+    '북구':  { left: 320, top: 290 },
+    '중구':  { left: 307, top: 388 },
+    '동구':  { left: 424, top: 274 },
+    '서구':  { left: 206, top: 341 },
+    '남구':  { left: 372, top: 478 },
+    '수성구':  { left: 412, top: 380 },
+    '달서구':  { left: 270, top: 490 },
+    '달성군':  { left: 170, top: 461 },
+    '군위군':  { left: 385, top: 130 }
+  },
+
+  incheon: {
+    '동구':  { left: 510, top: 250 },
+    '서구':  { left: 468, top: 158 },
+    '중구':  { left: 404, top: 264 },
+    '계양구':  { left: 566, top: 181 },
+    '부평구':  { left: 612, top: 270 },
+    '남동구':  { left: 612, top: 350 },
+    '미추홀구':  { left: 510, top: 340 },
+    '연수구':  { left: 450, top: 421 },
+    '강화군':  { left: 385, top: 68 },
+    '웅진군':  { left: 220, top: 480 }
+  },
+
+
+  gwangju: {
+    '북구':  { left: 450, top: 180 },
+    '동구':  { left: 518, top: 378 },
+    '서구':  { left: 344, top: 324 },
+    '광산구':  { left: 206, top: 271 },
+    '남구':  { left: 332, top: 450 }
+
+  },
+
+
+   daejeon: {
+    '중구':  { left: 350, top: 410 },
+    '동구':  { left: 428, top: 308 },
+    '서구':  { left: 284, top: 314 },
+    '대덕구':  { left: 366, top: 201 },
+    '유성구':  { left: 242, top: 200 }
+
+  },
+
+
+  ulsan: {
+    '북구':  { left: 470, top: 170 },
+    '동구':  { left: 508, top: 298 },
+    '중구':  { left: 384, top: 244 },
+    '남구':  { left: 416, top: 341 },
+    '울주군':  { left: 230, top: 260 }
+
+  },
+
+
+
+  sejong: {
+    '세종시':  { left: 280, top: 300 }
+  },
+
+  gyeonggi: {
+    '수원시':  { left: 380, top: 490 },
+    '의왕시':  { left: 298, top: 408 },
+    '오산시':  { left: 284, top: 504 },
+    '안성시':  { left: 486, top: 571 },
+    '평택시':  { left: 312, top: 570 },
+    '화성시':  { left: 192, top: 570 },
+    '군포시':  { left: 170, top: 480 },
+    '안산시':  { left: 70, top: 521 },
+    '이천시':  { left: 565, top: 478 },
+    '용인시':  { left: 471, top: 471 },
+    '안양시':  { left: 187, top: 395 },
+    '시흥시':  { left: 76, top: 424 },
+    '성남시':  { left: 407, top: 390 },
+    '광주시':  { left: 531, top: 380 },
+    '여주시':  { left: 622, top: 362 },
+    '부천시':  { left: 78, top: 322 },
+    '광명시':  { left: 165, top: 305 },
+    '과천시':  { left: 281, top: 317 },
+    '구리시':  { left: 401, top: 297 },
+    '하남시':  { left: 484, top: 304 },
+    '양평군':  { left: 582, top: 264 },
+    '연천군':  { left: 323, top: 71 },
+    '포천시':  { left: 471, top: 87 },
+    '가평군':  { left: 573, top: 162 },
+    '남양주시':  { left: 472, top: 202 },
+    '양주시':  { left: 337, top: 238 },
+    '동두천시':  { left: 375, top: 137 },
+    '의정부시':  { left: 225, top: 225 },
+    '김포시':  { left: 123, top: 224 },
+    '파주시':  { left: 159, top: 118 },
+    '고양시':  { left: 270, top: 143 }
+
+  },
+
+chungbuk: {
+    '영동군':  { left: 288, top: 524 },
+    '옥천군':  { left: 209, top: 449 },
+    '보은군':  { left: 264, top: 359 },
+    '청주시':  { left: 157, top: 319 },
+    '괴산군':  { left: 364, top: 217 },
+    '진천군':  { left: 116, top: 212 },
+    '음성군':  { left: 204, top: 110 },
+    '충주시':  { left: 314, top: 119 },
+    '제천시':  { left: 419, top: 70 },
+    '단양군':  { left: 500, top: 160 },
+    '증평군':  { left: 248, top: 233 }
+
+},
+chungnam: {
+    '당진시':  { left: 269, top: 107 },
+    '아산시':  { left: 389, top: 143 },
+    '천안시':  { left: 499, top: 168 },
+    '예산군':  { left: 326, top: 243 },
+    '서산시':  { left: 194, top: 201 },
+    '태안군':  { left: 99, top: 163 },
+    '홍성군':  { left: 214, top: 307 },
+    '청양군':  { left: 359, top: 359 },
+    '공주시':  { left: 444, top: 294 },
+    '보령시':  { left: 241, top: 422 },
+    '서천군':  { left: 300, top: 528 },
+    '부여군':  { left: 367, top: 448 },
+    '논산시':  { left: 468, top: 512 },
+    '계룡시':  { left: 473, top: 400 },
+    '금산군':  { left: 582, top: 494 }
+
+},
+jeonnam: {
+    '영광군':  { left: 172, top: 80 },
+    '함평군':  { left: 199, top: 166 },
+    '장성군':  { left: 266, top: 70 },
+    '담양군':  { left: 361, top: 70 },
+    '곡성군':  { left: 455, top: 96 },
+    '구례군':  { left: 567, top: 117 },
+    '신안군':  { left: 39, top: 240 },
+    '무안군':  { left: 138, top: 232 },
+    '나주시':  { left: 264, top: 254 },
+    '화순군':  { left: 334, top: 183 },
+    '순천시':  { left: 445, top: 206 },
+    '광양시':  { left: 553, top: 210 },
+    '영암군':  { left: 270, top: 348 },
+    '보성군':  { left: 382, top: 290 },
+    '여수시':  { left: 537, top: 307 },
+    '고흥군':  { left: 462, top: 363 },
+    '장흥군':  { left: 370, top: 382 },
+    '강진군':  { left: 295, top: 443 },
+    '해남군':  { left: 193, top: 430 },
+    '목포시':  { left: 162, top: 338 },
+    '진도군':  { left: 91, top: 422 },
+    '완도군':  { left: 251, top: 522 }
+
+},
+gyeongsangbuk: {
+    '울릉군':  { left: 579, top: 82 },
+    '울진군':  { left: 487, top: 146 },
+    '봉화군':  { left: 384, top: 114 },
+    '영양군':  { left: 397, top: 219 },
+    '영주시':  { left: 279, top: 135 },
+    '안동시':  { left: 302, top: 244 },
+    '예천군':  { left: 208, top: 256 },
+    '문경시':  { left: 169, top: 163 },
+    '상주시':  { left: 108, top: 298 },
+    '영덕군':  { left: 512, top: 267 },
+    '청송군':  { left: 426, top: 316 },
+    '의성군':  { left: 318, top: 346 },
+    '구미시':  { left: 208, top: 358 },
+    '김천시':  { left: 110, top: 411 },
+    '칠곡군':  { left: 259, top: 445 },
+    '성주군':  { left: 168, top: 487 },
+    '고령군':  { left: 192, top: 572 },
+    '영천시':  { left: 380, top: 416 },
+    '포항시':  { left: 527, top: 391 },
+    '경주시':  { left: 453, top: 476 },
+    '경산시':  { left: 339, top: 495 },
+    '청도군':  { left: 294, top: 578 }
+},
+  gyeongsangnam: {
+    '창원시':  { left: 392, top: 337 },
+    '김해시':  { left: 476, top: 285 },
+    '진주시':  { left: 200, top: 300 },
+    '양산시':  { left: 540, top: 200 },
+    '거제시':  { left: 342, top: 495 },
+    '통영시':  { left: 441, top: 410 },
+    '사천시':  { left: 170, top: 400 },
+    '밀양시':  { left: 430, top: 179 },
+    '함안군':  { left: 310, top: 285 },
+    '창녕군':  { left: 320, top: 175 },
+    '고성군':  { left: 279, top: 390 },
+    '남해군':  { left: 98, top: 470 },
+    '하동군':  { left: 90, top: 320 },
+    '산청군':  { left: 110, top: 220 },
+    '함양군':  { left: 50, top: 150 },
+    '거창군':  { left: 180, top: 84 },
+    '합천군':  { left: 214, top: 174 }
+  },
+  gangwon: {
+    "철원군": { left: 87, top: 148 },
+      "화천군": { left: 184, top: 214 },
+      "양구군": { left: 292, top: 153 },
+      "고성군": { left: 380, top: 80 },
+      "속초시": { left: 465, top: 156 },
+      "양양군": { left: 504, top: 269 },
+      "인제군": { left: 382, top: 229 },
+      "춘천시": { left: 173, top: 341 },
+      "홍천군": { left: 280, top: 278 },
+      "강릉시": { left: 561, top: 354 },
+      "동해시": { left: 595, top: 455 },
+      "삼척시": { left: 608, top: 575 },
+      "태백시": { left: 492, top: 550 },
+      "정선군": { left: 474, top: 430 },
+      "평창군": { left: 420, top: 332 },
+      "영월군": { left: 370, top: 505 },
+      "횡성군": { left: 330, top: 400 },
+      "원주시": { left: 230, top: 450 }
+  },
+  jeonbuk: {
+    '군산시':  { left: 176, top: 175 },
+    '익산시':  { left: 297, top: 151 },
+    '완주군':  { left: 415, top: 155 },
+    '무주군':  { left: 575, top: 178 },
+    '진안군':  { left: 483, top: 263 },
+    '전주시':  { left: 364, top: 261 },
+    '김제시':  { left: 261, top: 260 },
+    '부안군':  { left: 158, top: 301 },
+    '정읍시':  { left: 256, top: 376 },
+    '임실군':  { left: 381, top: 368 },
+    '장수군':  { left: 534, top: 349 },
+    '고창군':  { left: 151, top: 421 },
+    '순창군':  { left: 347, top: 461 },
+    '남원시':  { left: 471, top: 450 }
+
+  },
+
+  jeju: {
+    '제주시':  { left: 316, top: 255 },
+    '서귀포시':  { left: 397, top: 351 }
+  }
+
+
+};
+
+document.querySelectorAll('.map').forEach(mapEl => {
+  const mapType = mapEl.dataset.map;
+  const positions = positionsData[mapType];
+  mapEl.querySelectorAll('.label').forEach(labelEl => {
+    const name = labelEl.dataset.name;
+    if (positions[name]) {
+      labelEl.style.top = positions[name].top + 'px';
+      labelEl.style.left = positions[name].left + 'px';
+    }
+  });
+});
+
+
+const select = document.getElementById('mySelect');
+const contents = document.querySelectorAll('.map');
+
+select.addEventListener('change', function() {
+  contents.forEach(div => div.classList.remove('show')); // 모두 숨김
+  const selected = document.getElementById(this.value);
+  if(selected) selected.classList.add('show'); // 선택한 것만 표시
+});
+
+
+
+(function () {
+    const btn = document.getElementById('menuBtn');
+    const panel = document.getElementById('menuPanel');
+
+   
+    const toggle = () => {
+      const willOpen = panel.hasAttribute('hidden');
+      if (willOpen) {
+        panel.removeAttribute('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+       
+        setTimeout(() => {
+          const firstItem = panel.querySelector('[role="menuitem"], a, button');
+          firstItem?.focus();
+        }, 0);
+      } else {
+        panel.setAttribute('hidden', '');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.focus();
+      }
+    };
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggle();
+    });
+
+   
+
+    
+  })();
+
+
+
+
+
+  </script>
+
+
+</body>
+</html>
